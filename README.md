@@ -73,42 +73,6 @@ This provides an interactive interface to predict diabetes risk for individual p
 - Confusion Matrix
 - Feature importance analysis
 
-## 📊 Visualizations
-
-The system generates:
-1. **Exploratory Data Analysis plots**:
-   - Target distribution
-   - Feature correlation heatmap
-   - Age vs Glucose scatter plot
-   - BMI distribution by diabetes status
-
-2. **Model Performance plots**:
-   - Confusion matrix
-   - ROC curve
-   - Feature importance chart
-
-## 🎯 Example Usage
-
-```python
-from diabetes_prediction import predict_diabetes_risk
-
-# Example patient data
-result = predict_diabetes_risk(
-    pregnancies=2,
-    glucose=120,
-    blood_pressure=70,
-    skin_thickness=30,
-    insulin=135,
-    bmi=28.5,
-    diabetes_pedigree=0.4,
-    age=35
-)
-
-print(f"Prediction: {result['prediction']}")
-print(f"Risk Level: {result['risk_level']}")
-print(f"Probability: {result['probability_percent']}%")
-```
-
 ## ⚠️ Important Notes
 
 - This is a screening tool and should not replace professional medical advice
@@ -120,7 +84,6 @@ print(f"Probability: {result['probability_percent']}%")
 
 - `diabetes.csv`: Original dataset
 - `diabetes_prediction.py`: Complete analysis and model training
-- `predict_diabetes.py`: Interactive prediction tool
 - `requirements.txt`: Python dependencies
 - `README.md`: This documentation
 
